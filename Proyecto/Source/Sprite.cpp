@@ -82,9 +82,9 @@ void Sprite::CreateTextures(char* name){
 		translate_x = x;
 		translate_y = y;
 		translate_z = 0.f;
-		scale_x = 1.f;
-		scale_y = 1.f;
-		scale_z = 1.f;
+		scale_x = 1.f;   //Se cambia tamaño de portada en "x"
+		scale_y = 1.f;   //Se cambia tamaño de portada "y"
+		scale_z = 400.f; //Se cambia tamaño de portada "z" lo acerca
 
 		faces[model.faces][9];
 
