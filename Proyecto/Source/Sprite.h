@@ -44,6 +44,8 @@ public:
 	void TranslateXYDraw(GLfloat x, GLfloat y);
 	void RotateXYZ(GLfloat x, GLfloat y, GLfloat z);
 	void ScaleXYZ(GLfloat x, GLfloat y, GLfloat z);
+	void ScaleXY(GLfloat x, GLfloat y);
+	
 
 	GLfloat rotate_x;
 	GLfloat rotate_y;

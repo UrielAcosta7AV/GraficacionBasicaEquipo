@@ -4,11 +4,28 @@
 #include "Config.h"
 #include <SDL.h>
 
+
 CGame::CGame(){
 	estadoJuego = ESTADO_INICIANDO;
 	tiempoFrameInicial = CERO;
 	tick = CERO;
 	atexit(SDL_Quit);
+	////////////////////////////////
+	//animacion de inicio
+	//translate_nave_x = -800;
+	translate_nave_y = 450;
+	translate_nave_z = -5.f;
+	rotate_nave_x = -95.f;
+	rotate_nave_y = 0.f;
+	rotate_nave_z = 0.f;
+	/////////////////
+	//translate_naveE_x = -800;
+	translate_naveE_y = 0;
+	translate_naveE_z = -5.f;
+	rotate_naveE_x = -95.f;
+	rotate_naveE_y = 0.f;
+	rotate_naveE_z = 0.f;
+	/////////////////////
 }
 
 void CGame::IniciandoVideo()
@@ -53,10 +70,15 @@ void CGame::CargandoObjetos()
 	textoOpcion1Sel = new Sprite(&openGlImplement, "Texto_Opcion1Sel", 0, 0);
 	textoOpcion2Sel = new Sprite(&openGlImplement, "Texto_Opcion2Sel", 0, 0);
 	nave = new Nave(&openGlImplement, "MiNave", (WIDTH_SCREEN / 2), (HEIGHT_SCREEN - 80), NAVE_PROPIA);
-	jugandoFondo = new Sprite(&openGlImplement, "Jugando", 0, 0);
+	jugandoFondo = new Sprite(&openGlImplement, "Jugando", -380, 0);
 	ganasteFondo = new Sprite(&openGlImplement, "Ganaste", 0, 0);
 	perdisteFondo = new Sprite(&openGlImplement, "Perdiste", 0, 0);
+	imgperdiste = new Sprite(&openGlImplement, "fin", 0, 0);
+	imgfon = new Sprite(&openGlImplement, "fon", 0, 640);
+	imgganaste = new Sprite(&openGlImplement, "win", 0, 0);
+	img1 = new Sprite(&openGlImplement, "img1", 0, -340);
 
+	
 	for (int i = 0; i < MAXIMO_DE_ENEMIGOS; i++)
 	{
 		enemigoArreglo[i] = new Nave(&openGlImplement, "Enemigo", i * 2, 0, NAVE_ENEMIGA);
@@ -204,7 +226,54 @@ void CGame::MoverEnemigo(){
 }//Termina MoverEnemigo
 
 void CGame::JugandoPintar(){
+	//
 	jugandoFondo->Draw();
+	
+	jugandoFondo->translate_x += 1;
+	
+	
+	if (jugandoFondo->translate_x >= 4)
+	{
+		jugandoFondo->translate_x = -380;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	img1->Draw();
+	img1->ScaleXY(80, 100);
+	img1->translate_x += 5;
+	img1->translate_y += 2;
+	img1->RotateXYZ(360.f, 360.f, 0.f);
+	if (img1->translate_x >= 1300)
+	{
+		img1->translate_x = 0;
+		img1->translate_y = 0;
+	}
+
+	imgfon->Draw();
+	imgfon->ScaleXY(1.f, 1.f);
+	imgfon->translate_x += 5;
+	imgfon->translate_y -= 3;
+	if (imgfon->translate_x >= 1800)
+	{
+		imgfon->translate_x = 0;
+		imgfon->translate_y = 640;
+	}
+
+
+	
 	////////////////////////////////////////
 	//////// CONTROL DE COLISIONES /////////
 	for (int i = 0; i < nivel[nivelActual].Enemigos_VisiblesAlMismoTiempo; i++)
@@ -234,7 +303,14 @@ void CGame::JugandoPintar(){
 	if (vida <= CERO)
 		estadoJuego = ESTADO_TERMINANDO;
 
+	
+
 	nave->Draw();
+
+
+
+
+
 	for (int i = 0; i < nivel[nivelActual].Enemigos_VisiblesAlMismoTiempo; i++)
 	{
 		enemigoArreglo[i]->Draw();
@@ -320,19 +396,36 @@ void CGame::MenuActualizar()
 
 void CGame::MenuPintar()
 {
+
 	menuFondo->Draw();
 	textoTitulo->TranslateXYDraw(WIDTH_SCREEN / 8, 0);
-
-	textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450);//570
+	///////////////////////////////////////////////////
+	//animacion de inicio
+	//textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450 -2.f);//570
+	textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450);//570>>>>>>> .r6
 	textoNombre->Draw();
+	///////////////
+	//////////////
+	/////////////////
+	textoOpcion1->TranslateXYDraw(240, 220);
+	textoOpcion2->TranslateXYDraw(240, 220 + 30);
 
-	textoOpcion1->TranslateXYDraw(320, 220);
-	textoOpcion2->TranslateXYDraw(320, 220 + 30);
-
-	if (opcionSeleccionada == MENU_OPCION1)
-		textoOpcion1Sel->TranslateXYDraw(320, 220);
+	if (opcionSeleccionada == MENU_OPCION1){
+    //textoOpcion1Sel->TranslateXYDraw(320, 220);
+    textoOpcion1Sel->TranslateXYDraw(-32, 0);
+	textoOpcion1Sel->TranslateXYZ(translate_nave_x, translate_nave_y, translate_nave_z);//570
+	textoOpcion1Sel->ScaleXYZ(30.f, 30.f, 30.f);
+	textoOpcion1Sel->RotateXYZ(rotate_nave_x, rotate_nave_y, rotate_nave_z = 0);//=======
+	
+	//textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450);//570>>>>>>> .r6
+	textoOpcion1Sel->Draw();
+}
 	else
-		textoOpcion2Sel->TranslateXYDraw(320, 220 + 30);
+		textoOpcion2Sel->TranslateXYDraw(-32, 120);
+	//textoOpcion2Sel->TranslateXYDraw(300, 200 );
+	textoOpcion2Sel->TranslateXYZ(translate_nave_x, translate_nave_y, translate_nave_z);//570
+	textoOpcion2Sel->ScaleXYZ(30.f, 30.f, 30.f);
+	textoOpcion2Sel->RotateXYZ(rotate_nave_x, rotate_nave_y, rotate_nave_z);//=======
 
 }//void	
 
@@ -347,9 +440,27 @@ void CGame::IniciarNave(){
 
 void CGame::TerminadoPintar(){
 	if (juegoGanado)
+	{
 		ganasteFondo->Draw();
+		imgganaste->TranslateXYDraw(450, 320);
+		imgganaste->TranslateXYZ(translate_nave_x, translate_nave_y, translate_nave_z);
+		imgganaste->ScaleXYZ(90.f, 90.f, 60.f);
+		imgganaste->RotateXYZ(rotate_nave_x, rotate_nave_y, rotate_nave_z);
+		imgganaste->Draw();
+
+		
+	}
+		
 	else
 		perdisteFondo->Draw();
+	imgperdiste->TranslateXYDraw(450, 320);
+	imgperdiste->TranslateXYZ(translate_nave_x, translate_nave_y, translate_nave_z);
+	imgperdiste->ScaleXYZ(180.f, 180.f, 180.f);
+	imgperdiste->RotateXYZ(rotate_nave_x, rotate_nave_y, rotate_nave_z);
+	imgperdiste->Draw();
+
+
+
 }
 
 void CGame::TerminadoActualizar(){

@@ -26,6 +26,27 @@ public:
 
 
 private:
+	/////////////////////////////
+	////////////////////////////
+	GLint translate_nave_x;
+	GLint translate_nave_y;
+	GLfloat translate_nave_z;
+	GLfloat rotate_nave_x;
+	GLfloat rotate_nave_y;
+	GLfloat rotate_nave_z;
+	//////////////////////////
+	//animacion
+	GLint translate_naveE_x;
+	GLint translate_naveE_y;
+	GLfloat translate_naveE_z;
+	GLfloat rotate_naveE_x;
+	GLfloat rotate_naveE_y;
+	GLfloat rotate_naveE_z;
+	////
+
+	//////////////////////////
+
+
 	void CargandoObjetos();
 	void IniciandoVideo();
 	void MoverEnemigo();
@@ -77,5 +98,10 @@ private:
 	Sprite *jugandoFondo;//Fondo del juego
 	Sprite *ganasteFondo;//Fondo cuando ganas
 	Sprite *perdisteFondo;//Fondo cuando ganas
+	Sprite *img1;
+
+	Sprite *imgperdiste;
+	Sprite *imgganaste;
+	Sprite *imgfon;
 
 };

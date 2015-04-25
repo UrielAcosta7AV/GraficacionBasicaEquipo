@@ -1,6 +1,7 @@
 #include "Sprite.h"
 #include <stdio.h>
 #include <SDL.h>
+#include "Nave.h"
 
 Sprite::Sprite(OpenGlImplement *openGlImplement){
 	rotate_x = 0.f; 
@@ -155,6 +156,13 @@ void Sprite::CreateTextures(char* name){
 		scale_y = y;
 		scale_z = z;
 	}
+
+	void Sprite::ScaleXY(GLfloat x, GLfloat y){
+		scale_x = x;
+		scale_y = y;
+
+	}
+
 
 	void Sprite::SetVisible(bool isVisible)
 	{

@@ -35,5 +35,24 @@ public:
 	GLuint GetTexture();
 
 	///////////////////
+
+	void TranslateXYZ(GLfloat x, GLfloat y, GLfloat z);
+	void TranslateXY(GLfloat x, GLfloat y);
+	void TranslateZ(GLfloat z);
+	void TranslateXYDraw(GLfloat x, GLfloat y);
+	void RotateXYZ(GLfloat x, GLfloat y, GLfloat z);
+	//void ScaleXYZ(GLfloat x, GLfloat y, GLfloat z);
+	//void ScaleX(GLfloat x);
+	//void ScaleXY(GLfloat x, GLfloat y);
+
+	GLfloat rotate_x;
+	GLfloat rotate_y;
+	GLfloat rotate_z;
+	GLfloat translate_x;
+	GLfloat translate_y;
+	GLfloat translate_z;
+	GLfloat scale_x;
+	GLfloat scale_y;
+	GLfloat scale_z;
 };
 #endif
