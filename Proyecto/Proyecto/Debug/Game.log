@@ -1,28 +1,164 @@
-﻿Compilación iniciada a las 26/04/2015 12:11:37 a. m..
-     1>Proyecto "C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\Game.vcxproj" en el nodo 2 (Build destinos).
+﻿Compilación iniciada a las 2015-04-26 5:20:12 PM.
+     1>Proyecto "C:\Users\leonardo\Desktop\GraficacionBasicaEquipo\trunk\Proyecto\Proyecto\Game.vcxproj" en el nodo 2 (Build destinos).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\\..\Librerias\sdl2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D USING_OPENGL /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\Game.cpp
-         Game.cpp
-     1>c:\users\cristian uriel\desktop\juego\trunk\proyecto\source\sprite.h(97): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\leonardo\Desktop\GraficacionBasicaEquipo\trunk\Proyecto\Proyecto\\..\Librerias\sdl2\include /ZI /nologo /W3 /WX- /Od /Oy- /D USING_OPENGL /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Source\Game.cpp ..\Source\Nave.cpp ..\Source\Sprite.cpp ..\Source\Stage.cpp ..\Source\main.cpp
+         Stage.cpp
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.h(97): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
                  No se puede generar el constructor de copias o el operador de asignación de copias cuando el tipo definido por el usuario contiene una matriz de tamaño cero
-     1>c:\users\cristian uriel\desktop\juego\trunk\proyecto\source\game.cpp(435): warning C4244: 'argumento' : conversión de 'GLint' a 'GLfloat'; posible pérdida de datos
-     1>c:\users\cristian uriel\desktop\juego\trunk\proyecto\source\game.cpp(445): warning C4244: 'argumento' : conversión de 'GLint' a 'GLfloat'; posible pérdida de datos
-     1>c:\users\cristian uriel\desktop\juego\trunk\proyecto\source\game.cpp(477): warning C4244: 'argumento' : conversión de 'GLint' a 'GLfloat'; posible pérdida de datos
-     1>c:\users\cristian uriel\desktop\juego\trunk\proyecto\source\game.cpp(499): warning C4244: 'argumento' : conversión de 'GLint' a 'GLfloat'; posible pérdida de datos
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\..\Ejecutable\Game.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\\..\Librerias\sdl2\lib\x86" SDL2.lib SDL2main.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\..\Ejecutable\Game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\..\Ejecutable\Game.lib" /MACHINE:X86 Debug\main.obj
-         Debug\Game.obj
-         Debug\Nave.obj
-         Debug\OpegGLImplement.obj
-         Debug\Sprite.obj
-         Debug\SpriteDef.obj
-         Debug\Stage.obj
-     1>main.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/OPT:LBR'
-     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: la biblioteca predeterminada'msvcrt.lib' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
-         Game.vcxproj -> C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\..\Ejecutable\Game.exe
-     1>Compilación del proyecto terminada "C:\Users\Cristian Uriel\Desktop\Juego\trunk\Proyecto\Proyecto\Game.vcxproj" (Build destinos).
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(29): error C2059: error de sintaxis : '<<'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(33): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(40): error C2059: error de sintaxis : '=='
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(43): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(46): error C2086: 'GLfloat CGame::rotate_nave_x' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(36) : vea la declaración de 'CGame::rotate_nave_x'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(47): error C2086: 'GLfloat CGame::rotate_nave_y' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(37) : vea la declaración de 'CGame::rotate_nave_y'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(48): error C2086: 'GLfloat CGame::rotate_nave_z' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(38) : vea la declaración de 'CGame::rotate_nave_z'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(62): error C2059: error de sintaxis : '>>'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(63): error C2238: símbolos (token) inesperados delante de ';'
+         Sprite.cpp
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.h(97): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
+                 No se puede generar el constructor de copias o el operador de asignación de copias cuando el tipo definido por el usuario contiene una matriz de tamaño cero
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(43): warning C4244: 'argumento' : conversión de 'GLfloat' a 'GLuint'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : vea la declaración de 'strcpy'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(62): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : vea la declaración de 'strcpy'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(63): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : vea la declaración de 'strcat'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(64): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : vea la declaración de 'strcat'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(83): warning C4244: '=' : conversión de 'GLfloat' a 'int'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(84): warning C4244: '=' : conversión de 'GLfloat' a 'int'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(92): warning C4244: '=' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(93): warning C4244: '=' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(183): warning C4244: 'return' : conversión de 'GLfloat' a 'int'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(187): warning C4244: 'return' : conversión de 'GLfloat' a 'int'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(286): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : vea la declaración de 'strtok'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(288): warning C4244: 'argumento' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(288): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : vea la declaración de 'strtok'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(303): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : vea la declaración de 'strtok'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(305): warning C4244: '=' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(305): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : vea la declaración de 'strtok'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(319): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : vea la declaración de 'strtok'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(320): warning C4018: '<' : no coinciden signed/unsigned
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.cpp(321): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : vea la declaración de 'strtok'
+         Nave.cpp
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.h(97): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
+                 No se puede generar el constructor de copias o el operador de asignación de copias cuando el tipo definido por el usuario contiene una matriz de tamaño cero
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\nave.cpp(53): warning C4244: 'argumento' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\nave.cpp(55): warning C4244: 'argumento' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\nave.cpp(67): warning C4244: 'argumento' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\nave.cpp(71): warning C4244: 'argumento' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+         Game.cpp
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.h(97): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
+                 No se puede generar el constructor de copias o el operador de asignación de copias cuando el tipo definido por el usuario contiene una matriz de tamaño cero
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(29): error C2059: error de sintaxis : '<<'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(33): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(40): error C2059: error de sintaxis : '=='
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(43): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(46): error C2086: 'GLfloat CGame::rotate_nave_x' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(36) : vea la declaración de 'CGame::rotate_nave_x'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(47): error C2086: 'GLfloat CGame::rotate_nave_y' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(37) : vea la declaración de 'CGame::rotate_nave_y'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(48): error C2086: 'GLfloat CGame::rotate_nave_z' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(38) : vea la declaración de 'CGame::rotate_nave_z'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(62): error C2059: error de sintaxis : '>>'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(63): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(13): error C2143: error de sintaxis : falta ';' delante de '<<'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(22): error C2143: error de sintaxis : falta ';' delante de '=='
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(39): error C2143: error de sintaxis : falta ';' delante de '>>'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(74): error C2039: 'CargandoObjetos' : no es un miembro de 'CGame'
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(10) : vea la declaración de 'CGame'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(76): error C2065: 'menuFondo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(76): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(77): error C2065: 'textoTitulo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(77): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(78): error C2065: 'textoNombre' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(78): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(79): error C2065: 'textoOpcion1' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(79): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(80): error C2065: 'textoOpcion2' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(80): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(81): error C2065: 'textoOpcion1Sel' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(81): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(82): error C2065: 'textoOpcion2Sel' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(82): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(83): error C2065: 'nave' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(83): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(84): error C2065: 'jugandoFondo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(84): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(85): error C2065: 'ganasteFondo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(85): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(86): error C2065: 'perdisteFondo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(86): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(87): error C2065: 'imgperdiste' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(87): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(88): error C2065: 'imgfon' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(88): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(89): error C2065: 'img1' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(89): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(90): error C2065: 'youwin' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(90): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(91): error C2065: 'youlost' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(91): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(92): error C2065: 'enter' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(92): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(93): error C2065: 'imgganasteNEVE' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(93): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(100): error C2065: 'enemigoArreglo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(100): error C2065: 'openGlImplement' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(101): error C2065: 'enemigoArreglo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(101): error C2227: el operando izquierdo de '->GetNaveObjeto' debe señalar al tipo class/struct/union/generic
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(101): error C2227: el operando izquierdo de '->SetAutoMovimiento' debe señalar al tipo class/struct/union/generic
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(102): error C2065: 'enemigoArreglo' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(102): error C2227: el operando izquierdo de '->GetNaveObjeto' debe señalar al tipo class/struct/union/generic
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(102): error C2227: el operando izquierdo de '->SetPasoLimite' debe señalar al tipo class/struct/union/generic
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(105): error C2065: 'opcionSeleccionada' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(432): error C2143: error de sintaxis : falta ';' delante de '<<'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(436): error C2065: 'traslate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(439): error C2065: 'traslate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(440): error C2065: 'traslate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(447): error C2065: 'traslate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(453): error C2065: 'traslate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(460): error C2143: error de sintaxis : falta ';' delante de '=='
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(465): error C2143: error de sintaxis : falta ';' delante de '>>'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(473): error C2143: error de sintaxis : falta ';' delante de '<<'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(480): error C2143: error de sintaxis : falta ';' delante de '=='
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(481): error C2143: error de sintaxis : falta ';' delante de '{'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(484): error C2065: 'translate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(491): error C2143: error de sintaxis : falta ';' delante de '>>'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(495): error C2065: 'translate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(527): error C2065: 'translate_nave_x' : identificador no declarado
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.cpp(549): error C2065: 'translate_nave_x' : identificador no declarado
+         Generando código...
+         Compilando...
+         main.cpp
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\sprite.h(97): warning C4200: se ha utilizado una extensión no estándar : matriz de tamaño cero en struct/union
+                 No se puede generar el constructor de copias o el operador de asignación de copias cuando el tipo definido por el usuario contiene una matriz de tamaño cero
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(29): error C2059: error de sintaxis : '<<'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(33): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(40): error C2059: error de sintaxis : '=='
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(43): error C2238: símbolos (token) inesperados delante de ';'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(46): error C2086: 'GLfloat CGame::rotate_nave_x' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(36) : vea la declaración de 'CGame::rotate_nave_x'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(47): error C2086: 'GLfloat CGame::rotate_nave_y' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(37) : vea la declaración de 'CGame::rotate_nave_y'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(48): error C2086: 'GLfloat CGame::rotate_nave_z' : nueva definición
+                 c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(38) : vea la declaración de 'CGame::rotate_nave_z'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(62): error C2059: error de sintaxis : '>>'
+     1>c:\users\leonardo\desktop\graficacionbasicaequipo\trunk\proyecto\source\game.h(63): error C2238: símbolos (token) inesperados delante de ';'
+         Generando código...
+     1>Compilación del proyecto terminada "C:\Users\leonardo\Desktop\GraficacionBasicaEquipo\trunk\Proyecto\Proyecto\Game.vcxproj" (Build destinos) -- ERROR.
 
-Compilación correcta.
+ERROR al compilar.
 
-Tiempo transcurrido 00:00:07.90
+Tiempo transcurrido 00:00:11.67
