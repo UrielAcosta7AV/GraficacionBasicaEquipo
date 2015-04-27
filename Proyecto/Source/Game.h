@@ -109,5 +109,6 @@ private:
 	Sprite *imgperdiste;
 	Sprite *imgganaste;
 	Sprite *imgfon;
+	Sprite *basura3;
 
 };

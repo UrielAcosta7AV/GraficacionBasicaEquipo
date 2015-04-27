@@ -80,6 +80,7 @@ void CGame::CargandoObjetos()
 	youlost = new Sprite(&openGlImplement, "youlost", 210, 80);///TEXTO youlost
 	enter = new Sprite(&openGlImplement, "Enter", 150, 500);///TEXTO ENTER
 	imgganasteNEVE = new Sprite(&openGlImplement, "MiNave", 0, 0);///IMAGEN ANIMACION /PERDISTE NAVE propia
+	basura3 = new Sprite(&openGlImplement, "imgbasura3", 0, 320);////IMAGEN BASUARA ESPACIAL3 EN JUGANDO
 
 
 
@@ -274,7 +275,17 @@ void CGame::JugandoPintar(){
 		imgfon->translate_x = 0;
 		imgfon->translate_y = 640;
 	}
-
+	///////
+	basura3->Draw();
+	basura3->ScaleXYZ(30.f, 30.f, 30.f);
+	basura3->RotateXYZ(rotate_nave_x, rotate_nave_y, rotate_nave_z);
+	basura3->translate_x += 5;
+	/*basura3->translate_y -= 3;*/
+	if (basura3->translate_x >= 1800)
+	{
+		basura3->translate_x = -100;
+		basura3->translate_y = 320;
+	}
 	
 	///FIN DE BASURA ESPACIAL
 	///////////////////////////////////////
