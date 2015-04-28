@@ -428,11 +428,11 @@ void CGame::MenuPintar()
 
 
 	//////
-	textoTitulo->TranslateXYDraw(WIDTH_SCREEN / 8, 0);
+	textoTitulo->TranslateXYDraw(WIDTH_SCREEN / 3, 0);
 	///////////////////////////////////////////////////
 	//animacion de inicio
 	//textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450 -2.f);//570
-	textoNombre->TranslateXY( WIDTH_SCREEN / 3, 450);//570>>>>>>> .r6
+	textoNombre->TranslateXY( WIDTH_SCREEN / 5, 450);//570>>>>>>> .r6
 	textoNombre->Draw();
 	///////////////
 	//////////////

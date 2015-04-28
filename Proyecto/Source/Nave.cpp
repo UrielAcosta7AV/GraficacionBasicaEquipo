@@ -98,7 +98,7 @@ void Nave::Draw()
 			case NAVE_PROPIA:
 				nave->ScaleXYZ(10.f, 10.f, 10.f);
 				//nave->rotate_x = -10;
-				nave->RotateXYZ(10.f, 10.f, 5.f);
+				nave->RotateXYZ(5.f, 5.f, 5.f);
 				
 				//nave->rotate_z = 100;
 				
